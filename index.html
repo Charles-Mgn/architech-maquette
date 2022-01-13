@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Accueil | Architech</title>
 </head>
 <body id="accueil">
 <header class="accueil-header">
-    <img src="img/logo_large.png" alt="logo architech" class="header-logo-desktop">
     <nav>
         <ul>
             <li><a href="#" class="active">Accueil</a></li>
@@ -20,13 +20,22 @@
     </nav>
 </header>
 
-<main>
-    <img src="img/logo_large.png" alt="logo architech" class="accueil-logo-desktop">
-    <div class="accueil-img1"></div>
-    <div class="accueil-img2"></div>
-    <h1>Et si...</h1>
-    <p> nous utilisions la technologie pour parler d'art et d'architecture ? Découvrez au travers d'ARCHITECH la vie et les oeuvres de Jean-Pierre Ugarte, un peintre féru de perspectives et de paysages surréaliste et brutaliste .</p>
-    <p>Jean-Pierre Ugarte (né à Bordeaux le 7 janvier 1950) est un peintre français. Il réalise ses premières œuvres en 1961 et présente sa première exposition en 1984. Il poursuit ensuite son activité de peintre, avec des expositions, jusque dans les années 2000 et vend ses toiles en France et à l'étranger.</p>
+<main class="layout">
+    <div class="accueil-flex-row">
+        <img src="img/logo_large.png" alt="logo architech" class="accueil-logo-desktop">
+        <div class="image-border accueil-img1"></div>
+    </div>
+    <div class="accueil-flex-row">
+        <div class="image-border accueil-img2"></div>
+        <div class="inline-texte accueil-bloc-text1">
+            <h1 class="inline-title">Et si...</h1>
+            <p class="inline-paragraph">nous utilisions la technologie pour parler d'art et d'architecture ? Découvrez
+                au
+                travers d'ARCHITECH la vie et les oeuvres de Jean-Pierre Ugarte, un peintre féru de perspectives et de
+                paysages surréaliste et brutaliste .</p>
+        </div>
+    </div>
+    <p class="accueil-bloc-text2">Jean-Pierre Ugarte (né à Bordeaux le 7 janvier 1950) est un peintre français. Il réalise ses premières œuvres en 1961 et présente sa première exposition en 1984. Il poursuit ensuite son activité de peintre, avec des expositions, jusque dans les années 2000 et vend ses toiles en France et à l'étranger.</p>
     <button ><a href="ugarte.html">> Découvrez Ugarte</a></button>
 </main>
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Collaboration | Architech</title>
 </head>
 <body id="collab">
@@ -20,20 +21,25 @@
     </nav>
 </header>
 
-<main>
-    <h1>Vous pouvez ici collaborer</h1>
-    <p> au contenu  de ce site en y ajoutant vos oeuvres favorites de Jean-Pierre Ugarte ! Pour cela, remplissez le formulaire ci-dessous avec les informations demandées (titre de l'oeuvre, année de réalisation, type de collection, type de peinture, et dimensions).</p>
+<main class="layout">
+    <div class="inline-texte"><h1 class="inline-title">Vous pouvez ici collaborer</h1>
+        <p class="inline-paragraph">au contenu de ce site en y ajoutant vos oeuvres favorites de Jean-Pierre Ugarte !
+            Pour cela, remplissez le formulaire ci-dessous avec les informations demandées (titre de l'oeuvre, année de
+            réalisation, type de collection, type de peinture, et dimensions).</p>
+    </div>
 
     <form>
-        <input type="text" placeholder="Titre de l'oeuvre">
-        <input type="text" placeholder="Année de réalisation">
-        <input type="text" placeholder="Type de collection">
-        <input type="text" placeholder="Type de peinture">
-        <input type="text" placeholder="Dimensions">
-    </form>
+        <input type="text" placeholder="Titre de l'oeuvre" required>
+        <input type="text" placeholder="Année de réalisation" required>
+        <input type="text" placeholder="Type de collection" required>
+        <input type="text" placeholder="Type de peinture" required>
+        <input type="text" placeholder="Dimensions" required>
 
-    <button><a href="oeuvres.html">< Annuler</a></button>
-    <button><a href="oeuvres.html">> Confirmer</a></button>
+        <div class="form-control">
+            <button><a href="oeuvres.html">< Annuler</a></button>
+            <button type="submit"><a href="oeuvres.html">> Confirmer</a></button>
+        </div>
+    </form>
 </main>
 
 <footer>

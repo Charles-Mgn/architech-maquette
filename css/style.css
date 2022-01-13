@@ -7,9 +7,9 @@
     color: #000;
     font-size: 62.5%;
     font-family: 'Reem Kufi', sans-serif;
-    line-height: 4rem;
-    margin: 0 13rem;
+    line-height: 3rem;
     overflow-x: hidden;
+    --tonic-color: #00FFD3;
 }
 ::-webkit-scrollbar {
     width: 1rem;
@@ -18,4 +18,231 @@
 ::-webkit-scrollbar-thumb {
     background: #555;
 }
+a, li {
+    font-style: none;
+    text-decoration: none;
+    color: #000;
+}
+button {
+    background-color: #FFF;
+    border: 1px solid var(--tonic-color);
+    border-radius: 0;
+    padding: 1rem 0;
+    display: block;
+    margin: 0 auto 30px;
+}
+button:first-of-type {
+    margin-top: 100px;
+}
+button a {
+    display: block;
+    width: 300px;
+    height: 25px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.image-border {
+    border: 1px solid var(--tonic-color);
+}
+/* END OF BASICS */
 
+
+/* HEADER */
+header {
+    position: sticky;
+    height: 90px;
+}
+header img, header ul, header li {
+    display: inline-block;
+}
+header img {
+    height: 80px;
+    position: fixed;
+}
+nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    list-style: none;
+    padding: 1rem;
+    margin: 0 5rem;
+    font-size: 1.7rem;
+}
+.active {
+    border-bottom: 2px solid var(--tonic-color);
+}
+/* END OF HEADER */
+
+
+/* MAIN ACCUEIL */
+main {
+    margin-top: 90px;
+    font-size: 1.3rem;
+    position: relative;
+}
+.inline-title {
+    display: inline;
+    margin-right: .5rem;
+}
+.inline-paragraph {
+    display: inline;
+}
+.inline-texte {
+    max-width: 850px;
+}
+main > p {
+    max-width: 500px;
+}
+.accueil-bloc-text1 {
+    width: 400px;
+}
+.accueil-bloc-text2 {
+    display: block;
+    margin: 150px auto 0;
+}
+.accueil-img1, .accueil-img2 {
+    margin: 50px;
+}
+.accueil-img1 {
+    width: 536px;
+    height: 347px;
+    background: url("../img/desktop-accueil1.png") center;
+}
+.accueil-img2 {
+    width: 536px;
+    height: 347px;
+    background: url("../img/desktop-accueil2.png") center;
+    float: left;
+}
+.accueil-logo-desktop {
+    margin-left: 180px;
+}
+.accueil-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* END OF MAIN */
+
+
+/* MAIN UGARTE */
+.ugarte-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.ugarte-img1 {
+    width: 828px;
+    height: 584px;
+    background: url("../img/desktop-ugarte1.png");
+    margin-left: -240px;
+}
+.ugarte-img2 {
+    width: 448px;
+    height: 277px;
+    background: url("../img/desktop-ugarte2.png");
+    margin-right: -100px;
+    align-self: end;
+    margin-bottom: -80px;
+}
+.ugarte-texte {
+    width: 380px;
+    line-height: 2rem;
+}
+/* END OF MAIN UGARTE */
+
+
+/* MAIN OEUVRES */
+.oeuvre {
+    display: flex;
+    margin-top: 100px;
+}
+.oeuvre:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+.oeuvre-desc {
+    padding: 0 3rem;
+}
+.oeuvre-titre {
+    text-transform: uppercase;
+}
+/* END OF MAIN OEUVRES */
+
+
+/* MAIN COLLAB */
+#collab .inline-texte {
+    width: 850px;
+    display: block;
+    margin: 0 auto;
+}
+form {
+    margin-top: 100px;
+}
+form input {
+    display: block;
+    margin: 20px auto;
+    width: 850px;
+    height: 30px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.6rem;
+    border: 1px solid var(--tonic-color);
+    border-radius: 0;
+    padding-left: 10px;
+}
+.form-control {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collab button {
+    display: inline-block;
+    margin: 0 50px;
+}
+/* END OF MAIN COLLAB */
+
+
+/* MAIN ARTISTES */
+.artistes-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.artiste-img1 {
+    width: 828px;
+    height: 584px;
+    background: url("../img/desktop-artiste1.png");
+    margin-right: -240px;
+}
+.artiste-img2 {
+    width: 448px;
+    height: 277px;
+    background: url("../img/desktop-artiste2.png");
+    margin-left: -100px;
+    margin-bottom: -80px;
+    align-self: end;
+}
+.artiste-texte {
+    width: 380px;
+    line-height: 2rem;
+}
+/* END OF MAIN ARTISTES */
+
+/* FOOTER */
+footer {
+    margin-top: 15rem;
+    text-align: center;
+}
+footer * {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+}
+/* END OF FOOTER */
