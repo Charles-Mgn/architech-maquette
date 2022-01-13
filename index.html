@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Accueil | Architech</title>
 </head>
 <body id="accueil">
 <header class="accueil-header">
-    <nav>
+    <div class="nav-toggle" onclick='document.documentElement.classList.toggle("menu-open")'>
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="menu">
         <ul>
-            <li><a href="#" class="active">Accueil</a></li>
-            <li><a href="ugarte.html">Ugarte</a></li>
-            <li><a href="oeuvres.html">Oeuvres</a></li>
-            <li><a href="collab.html">Collaboration</a></li>
-            <li><a href="artistes.html">Artistes similaires</a></li>
+            <li class="menu-lien-principal"><a href="#" class="active">Accueil</a></li>
+            <li class="menu-lien-principal"><a href="ugarte.html">Ugarte</a></li>
+            <li class="menu-lien-principal"><a href="oeuvres.html">Oeuvres</a></li>
+            <li class="menu-lien-principal"><a href="collab.html">Collaboration</a></li>
+            <li class="menu-lien-principal"><a href="artistes.html">Artistes similaires</a></li>
         </ul>
+        <img src="img/logo_large.png" alt="logo architech">
     </nav>
 </header>
 
 <main class="layout">
     <div class="accueil-flex-row">
         <img src="img/logo_large.png" alt="logo architech" class="accueil-logo-desktop">
-        <div class="image-border accueil-img1"></div>
+        <div class="border-mobile-right">
+            <div class="image-border accueil-img1"></div>
+        </div>
     </div>
     <div class="accueil-flex-row">
-        <div class="image-border accueil-img2"></div>
+        <div class="border-mobile-left">
+            <div class="image-border accueil-img2"></div>
+        </div>
         <div class="inline-texte accueil-bloc-text1">
             <h1 class="inline-title">Et si...</h1>
             <p class="inline-paragraph">nous utilisions la technologie pour parler d'art et d'architecture ? Découvrez

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Artistes similaires | Architech</title>
 </head>
 <body id="artistes">
-<header>
-    <img src="img/logo_large.png" alt="logo architech" class="header-logo-desktop">
-    <nav>
+<header class="accueil-header">
+    <div class="nav-toggle" onclick='document.documentElement.classList.toggle("menu-open")'>
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="menu">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="ugarte.html">Ugarte</a></li>
-            <li><a href="oeuvres.html">Oeuvres</a></li>
-            <li><a href="collab.html">Collaboration</a></li>
-            <li><a href="#" class="active">Artistes similaires</a></li>
+            <li class="menu-lien-principal"><a href="index.html">Accueil</a></li>
+            <li class="menu-lien-principal"><a href="ugarte.html">Ugarte</a></li>
+            <li class="menu-lien-principal"><a href="oeuvres.html">Oeuvres</a></li>
+            <li class="menu-lien-principal"><a href="collab.html">Collaboration</a></li>
+            <li class="menu-lien-principal"><a href="#" class="active">Artistes similaires</a></li>
         </ul>
+        <img src="img/logo_large.png" alt="logo architech">
     </nav>
 </header>
 
