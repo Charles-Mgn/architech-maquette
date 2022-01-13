@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+
+/* BASICS */
+:root {
+    background-color: #FFF;
+    color: #000;
+    font-size: 62.5%;
+    font-family: 'Reem Kufi', sans-serif;
+    line-height: 4rem;
+    margin: 0 13rem;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #bbb;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
