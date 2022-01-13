@@ -50,22 +50,32 @@ h1 {
 
 /* HEADER */
 header {
-    position: sticky;
+    position: fixed;
     height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.8);
+    z-index: 1;
 }
 
 @media screen and (max-width: 700px) {
     header {
-        height: 90px;
+        height: 70px;
     }
 }
+
+@media screen and (min-width: 700px) {
+    nav img {
+        height: 0;
+        padding-top: 10px;
+    }
+}
+
 header img, header ul, header li {
     display: inline-block;
 }
-header img {
-    height: 80px;
-    position: fixed;
-}
+
 nav {
     display: block;
     margin: 0 auto;
@@ -90,7 +100,7 @@ nav li {
 
 /* MAIN ACCUEIL */
 main {
-    margin-top: 0;
+    margin-top: 70px;
     font-size: 1.4rem;
 }
 .accueil-img1 {
@@ -200,18 +210,20 @@ main {
     margin-bottom: 200px;
 }
 .ugarte-img1 {
-    width: 420px;
+    width: 100vw;
     height: 260px;
     background: url("../img/desktop-ugarte1.png") center;
     background-size: cover;
-    margin-left: -10px;
+    margin-left: -9px;
+    border-right: none;
 }
 .ugarte-img2 {
     width: 350px;
     height: 220px;
     background: url("../img/desktop-ugarte2.png") center;
     background-size: cover;
-    margin: 60px -60px 0 0;
+    margin: 60px -8px 0 auto;
+    border-right: none;
 }
 .ugarte-texte {
     width: 380px;
@@ -234,14 +246,15 @@ main {
         width: 448px;
         height: 277px;
         background: url("../img/desktop-ugarte2.png");
-        margin-right: -100px;
         align-self: end;
-        margin: 0 0 -80px 0;
+        margin: 0 -80px -80px 0;
     }
     .ugarte-texte {
         width: 380px;
         line-height: 2rem;
         margin-top: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
@@ -254,7 +267,7 @@ main {
     margin-top: 100px;
     margin-bottom: 150px;
 }
-.oeuvre:nth-of-type(2n-1) {
+.oeuvre:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 .oeuvre-desc {
@@ -270,17 +283,13 @@ main {
 @media screen and (min-width: 700px) {
     .oeuvre {
         display: flex;
-        margin-top: 100px;
-        margin-bottom: 0;
+        margin: 100px 20% 0;
     }
-    .oeuvre:nth-of-type(2n) {
-        flex-direction: row-reverse;
+    #oeuvres h1 {
+        margin: 0 20%;
     }
     .oeuvre-desc {
         padding: 0 3rem;
-    }
-    .oeuvre-desc * {
-        margin: unset;
     }
     .oeuvre-titre {
         text-transform: uppercase;
@@ -315,7 +324,7 @@ form input {
     #collab .inline-texte {
         max-width: 850px;
         display: block;
-        margin: 0 auto;
+        margin: 150px auto 0;
     }
     form {
         margin-top: 100px;
@@ -351,7 +360,7 @@ form input {
     margin-bottom: 100px;
 }
 .artiste-img1 {
-    width: 420px;
+    width: 100vw;
     height: 260px;
     background: url("../img/desktop-artiste1.png") center;
     background-size: cover;;
@@ -370,6 +379,8 @@ form input {
 .artiste-texte {
     width: 380px;
     line-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media screen and (min-width: 700px) {
